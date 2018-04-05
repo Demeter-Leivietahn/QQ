@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>miniQQ</title>
+	<style type="text/css">
+		.father{
+			position: relative;
+		}
+		#img{
+			border-radius: 50px;
+			position: absolute;
+			opacity: 0.1;
+			transition: opacity 4s;
+		}
+		#back{
+			background: black;
+			position: absolute;
+			opacity: 0.9;
+			width: 1500px;
+			height: 735px;
+			border-radius: 50px;
+			transition: opacity 4s;
+		}
+		.text1{
+			z-index: 5;	
+			display: inline-block;	
+			float: left;	
+		}
+		.text-span1{
+			padding-top:150px;
+			padding-left: 130px;	
+			font-size: 25px;
+			color: white;
+			line-height: 50px;
+			display: inline-block;
+			font-weight: 400;
+			letter-spacing: 8px;
+		}
+		.text2{
+			z-index: 5;	
+			display: inline-block;	
+			float: right;
+			margin-right: 130px;
+		}
+		.text-span2{
+			padding-top:150px;
+			padding-left: 200px;	
+			font-size: 25px;
+			color: white;
+			line-height: 50px;
+			display: inline-block;
+			font-weight: 400;
+			letter-spacing: 8px;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload=function(){
+			var image=document.getElementById('img');
+			var b=document.getElementById('back');
+			image.style.opacity="1.0";
+			b.style.opacity="0.4";
+		}
+	</script>
+</head>
+<body>
+<div class="father">
+	<div>
+		<img src="./img/304253.jpg" width="1500px" height="735px" id="img">
+		<div id="back"></div>
+	</div>
+	<marquee direction="up" loop="1" scrollamount="15px" behavior="slide" scrolldelay="0">
+		<div class="text1">
+			<span class="text-span1">miniQQ制作人：谭皓文 2016级软件二班 个人制作)<br>技术支持:<br>&nbsp&nbsp&nbsp《java编程思想》<br>
+			&nbsp&nbsp&nbsp《java疯狂讲义》
+				<br>&nbsp&nbsp&nbsp&nbspimooc教程<br>联系方式:<br>&nbsp&nbsp&nbsp&nbsp15803656165
+			</span>
+		</div>
+		<div class="text2">
+			<span class="text-span2">本款软件支持二人即时聊天，<br>
+			多人聊天，传递文件，<br>实时发送表情与图片、视频，<br>即时手动画图功能</span>
+		</div>
+	</marquee>
+</div>
+</body>
+</html>
